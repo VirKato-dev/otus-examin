@@ -6,6 +6,7 @@ import virkato.otus.model.Product;
 import virkato.otus.service.CartService;
 import virkato.otus.service.ProductService;
 
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -13,23 +14,21 @@ import java.util.Scanner;
 public class App {
 
     private final ProductService productService;
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner;
 
     private final CartService cartService;
-    private Cart cart = null;
+    private final Cart cart;
 
     public App(ProductService productService, CartService cartService) {
         this.productService = productService;
         this.cartService = cartService;
+        this.scanner = new Scanner(System.in);
+        this.cart = cartService.createCart();
     }
 
 
     public void run() {
         initRepository();
-
-        if (cart == null) {
-            cart = cartService.createCart();
-        }
 
         System.out.println("Welcome to Otus bar!");
         showMenu();
@@ -71,16 +70,18 @@ public class App {
 
 
     private void initRepository() {
-        productService.create(new Product("CocaCola", 10d));
-        productService.create(new Product("Fanta", 10d));
-        productService.create(new Product("Sprite", 10d));
-        productService.create(new Product("Donat", 15d));
-        productService.create(new Product("Burger", 30d));
-        productService.create(new Product("Hot dog", 25d));
-        productService.create(new Product("Frying potato", 20d));
-        productService.create(new Product("Pizza", 35d));
-        productService.create(new Product("Chips", 5d));
-        productService.create(new Product("Snickers", 8d));
+        productService.addProducts(List.of(
+                new Product("CocaCola", 10d),
+                new Product("Fanta", 10d),
+                new Product("Sprite", 10d),
+                new Product("Donat", 15d),
+                new Product("Burger", 30d),
+                new Product("Hot dog", 25d),
+                new Product("Frying potato", 20d),
+                new Product("Pizza", 35d),
+                new Product("Chips", 5d),
+                new Product("Snickers", 8d)
+        ));
     }
 
 

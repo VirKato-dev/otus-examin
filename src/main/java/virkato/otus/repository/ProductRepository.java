@@ -14,6 +14,15 @@ public class ProductRepository implements Repository<Product> {
 
 
     @Override
+    public void addAll(List<Product> items) {
+        items.forEach(i -> {
+            i.setId(products.size() + 1);
+            products.add(i);
+        });
+    }
+
+
+    @Override
     public Product add(Product entity) {
         products.add(entity);
         entity.setId(products.size());
@@ -28,13 +37,13 @@ public class ProductRepository implements Repository<Product> {
 
 
     @Override
-    public Optional<Product> get(int id) {
-        return products.stream().filter(e -> e.getId() == id).findFirst();
+    public Optional<Product> get(Integer id) {
+        return products.stream().filter(e -> e.getId().equals(id)).findFirst();
     }
 
 
     @Override
-    public void delete(int id) {
-        products.removeIf(e -> e.getId() == id);
+    public void delete(Integer id) {
+        products.removeIf(e -> e.getId().equals(id));
     }
 }

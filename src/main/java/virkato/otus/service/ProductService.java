@@ -18,6 +18,11 @@ public class ProductService {
     }
 
 
+    public void addProducts(List<Product> products) {
+        productRepository.addAll(products);
+    }
+
+
     public Product create(Product product) {
         return productRepository.add(product);
     }
