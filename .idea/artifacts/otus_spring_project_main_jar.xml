@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="otus-spring-project.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/otus_spring_project_main_jar</output-path>
+    <root id="archive" name="otus-spring-project.main.jar">
+      <element id="module-output" name="otus-spring-project.main" />
+      <element id="extracted-dir" path="D:/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/6.1.8/141fc11a5dbaa503fe361150312ad0fa9d9c03da/spring-core-6.1.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/6.1.8/79a5e45383542ff514b5328fe277410cf4054f3b/spring-beans-6.1.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-commons/1.12.6/255ebef194f74428cce1a63d107812d97b15b199/micrometer-commons-1.12.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/6.1.8/21219a0df58e5b96ef489a172b449232573352e8/spring-context-6.1.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/6.1.8/ef793a21e405a88d9d32b92cb459c845ee12b271/spring-aop-6.1.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-observation/1.12.6/ec96cbd5bafac7be6f8192b5c3c926930b571b30/micrometer-observation-1.12.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/6.1.8/a545266a6efac9283353a922783a0a06f197ec0/spring-jcl-6.1.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/6.1.8/dcf78ef442c24f32ff8c6a9746e7f5209b330111/spring-expression-6.1.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
